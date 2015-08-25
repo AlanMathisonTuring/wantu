@@ -1,0 +1,31 @@
+//
+//  wantu-Prefix.pch
+//  wantu
+//
+//  Created by 吴新超 on 15/5/15.
+//  Copyright (c) 2015年 wuxinchao. All rights reserved.
+//
+
+#ifndef wantu_wantu_Prefix_pch
+#define wantu_wantu_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIWindow+Extension.h"  
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+// RGB颜色
+#define WXCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#ifdef DEBUG
+#define WXCLog(...) NSLog(__VA_ARGS__)
+#else
+#define WXCLog(...)
+#endif
+
+#endif
