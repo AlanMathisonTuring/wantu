@@ -68,7 +68,6 @@
     [self.tableView headerBeginRefreshing];
     // 添加上拉刷新控件
     [self.tableView addFooterWithTarget:self action:@selector(loadMoreStatus)];
-    
     [self addObserverForNotificationCenter];
     
     //获得未读数显示在tabbaritem上
